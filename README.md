@@ -39,4 +39,4 @@
 > git rm \<filename\>
 
 关联远程库:
-> git remote add origin https://github.com/Ledger45/learngit.git
+> git remote add origin https://github.com/username/repo_name.git
