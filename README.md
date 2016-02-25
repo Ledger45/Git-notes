@@ -60,5 +60,8 @@
 > git branch dev
 > git checkout dev
 
+列出当前分支:
+> git branch
+
 
 
