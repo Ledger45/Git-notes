@@ -40,3 +40,14 @@
 
 关联远程库:
 > git remote add origin https://github.com/username/repo_name.git
+
+第一次推送master分支的所有内容，之后就不用加-u:
+> git push -u origin master
+
+克隆一个仓库，一个是https一个是ssh:
+> git clone https://github.com/username/repo_name.git
+> git clone git@github.com:username/repo_name.git
+
+创建SSH key:
+> ssh-keygen -t rsa -C "youremail@example.com"
+
