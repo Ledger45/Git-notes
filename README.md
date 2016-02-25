@@ -6,5 +6,8 @@
 > git init
 >
 
-把文件添加到stage
+把文件添加到stage:
 > git add \<filename\>
+
+把文件提交到本地仓库：
+> git commit -m "some description"
