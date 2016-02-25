@@ -2,6 +2,7 @@
 > 工作区 -> git add -> 暂存区 -> git commit -> 版本库 -> git push -> 远程仓库
 
 # 基本操作
+
 把目录变成git可管理的仓库:
 > git init
 
@@ -50,4 +51,12 @@
 
 创建SSH key:
 > ssh-keygen -t rsa -C "youremail@example.com"
+
+# 分支操作
+
+创建并切换到dev分支：
+> git checkout -b dev
+>> 相当于
+>>> git branch dev; git checkout dev
+
 
