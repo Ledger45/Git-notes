@@ -74,7 +74,7 @@
 > git merge dev
 
 将dev分支合并到当前分支（删除分之后log还在）:
-git merge --no-ff -m "merge with no-ff" dev 
+> git merge --no-ff -m "merge with no-ff" dev 
 
 将dev分支删除:
 > git branch -d dev
@@ -127,7 +127,25 @@ git merge --no-ff -m "merge with no-ff" dev
 > git tag -d \<tag-name\>
 
 删除远程的tag:
-git push origin :refs/tags/\<tag-name\>
+> git push origin :refs/tags/\<tag-name\>
+
+将tag推送到远端:
+> git push origin \<tag-name\>
+
+一次性推送所有tags:
+> git push origin --tags
+
+# 自定义Git
+
+将命令alias为lg（方便啊~）
+> git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+
+取消alias:
+> git config --global unset alias.lg
+
+让git显示颜色:
+> git config --global color.ui true 
+
 
 
 
