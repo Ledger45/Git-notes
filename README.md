@@ -3,4 +3,4 @@
 
 # 基本操作
 1. 把目录变成git可管理的仓库:
-    git init
+        git init
