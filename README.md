@@ -57,10 +57,8 @@
 创建并切换到dev分支：
 > git checkout -b dev
 > 相当于
+> git branch dev
+> git checkout dev
 
-'''
-git branch dev
-git checkout dev
-'''
 
 
