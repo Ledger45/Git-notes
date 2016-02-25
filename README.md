@@ -4,3 +4,5 @@
 # 基本操作
 把目录变成git可管理的仓库:
 > git init
+把文件添加到stage
+> git add <filename>
