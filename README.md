@@ -6,4 +6,4 @@
 > git init
 > 
 把文件添加到stage
-> git add <filename>
+> git add \<filename\>
