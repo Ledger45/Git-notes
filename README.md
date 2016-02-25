@@ -2,6 +2,7 @@
 > 工作区 -> git add -> 暂存区 -> git commit -> 版本库 -> git push -> 远程仓库
 
 # 基本操作
+
 把目录变成git可管理的仓库:
 > git init
 
@@ -53,6 +54,7 @@
 > ssh-keygen -t rsa -C "youremail@example.com"
 
 # 分支操作
+
 创建并切换到dev分支：
 > git checkout -b dev
 >
@@ -64,6 +66,74 @@
 
 列出当前分支:
 > git branch
+
+切换到某分支:
+> git checkout \<branchname\>
+
+将dev分支合并到当前分支:
+> git merge dev
+
+将dev分支合并到当前分支（删除分之后log还在）:
+git merge --no-ff -m "merge with no-ff" dev 
+
+将dev分支删除:
+> git branch -d dev
+
+查看分支合并情况:
+> git log --graph --pretty=oneline --abbrev-commit
+
+保存工作现场:
+> git stash
+
+查看stash
+> git stash list
+
+恢复现场并删除stash( 有多个stash时git stash apply stash@{0} 指定stash ):
+> git stash pop
+>
+> 相当于
+>
+> git stash apply
+>
+> git stash drop
+
+强制删除dev分支（dev分支如果没有merge的话用-d删不掉）
+> git branch -D dev
+
+在本地创建和远程分支对应的分支:
+>  git checkout -b branch-name origin/branch-name
+
+建立本地分支于远程分支的关联:
+> git branch --set-upstream branch-name origin/branch-name
+
+远程抓取最新提交:
+> git pull
+
+查看远程库信息:
+> git remote -v
+
+# 标签操作
+
+建立tag，tag是版本库的快照，就是指向某个commit的指针，类似分支，但是分支可以移动，tag不行
+> git tag -a \<tag-name\> -m "some description" 
+
+查看tag信息:
+> git show \<tag-name\>
+
+对指定的commit-id添加tag
+> git tag \<tag-name\> \<commit-id\>
+
+删除本地的tag
+> git tag -d \<tag-name\>
+
+删除远程的tag:
+git push origin :refs/tags/\<tag-name\>
+
+
+
+
+
+
 
 
 
