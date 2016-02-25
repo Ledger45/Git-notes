@@ -46,6 +46,7 @@
 
 克隆一个仓库，一个是https一个是ssh:
 > git clone https://github.com/username/repo_name.git
+> 
 > git clone git@github.com:username/repo_name.git
 
 创建SSH key:
@@ -54,8 +55,11 @@
 # 分支操作
 创建并切换到dev分支：
 > git checkout -b dev
+>
 > 相当于
+>
 > git branch dev
+>
 > git checkout dev
 
 列出当前分支:
